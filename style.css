@@ -1,0 +1,98 @@
+
+html,
+head{
+    font-family: 'Fira Code', monospace;
+}
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    background: rgb(255, 255, 255);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    background-color:DodgerBlue;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    width: 100%;
+    margin: 25px auto;
+    border: 5px solid rgb(205, 211, 240);
+    border-radius: 15px;
+    height: 100%;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+#top{
+    grid-column: 1/-1;
+    width: 100%;
+    text-align: center;
+}
+
+.top{
+    grid-column: 1/6;
+}
+
+#addTask{
+    background-color: rgb(169, 211, 250);
+    color: rgb(24, 24, 24);
+}
+
+form{
+    grid-column: 1/-1;
+    border: 3px solid whitesmoke;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.taskadd{
+    border: 3px solid whitesmoke;
+    background-color: rgba(255, 255, 255, 0.253);
+    border-radius: 10px;
+}
+
+h4{
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+
+#IncompleteTask{
+    
+    grid-column: 1/6;
+}
+#CompleteTask{
+    grid-column: 8/-1;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px dotted #ccc;
+}
+
+.delete {
+    float: right;
+    background-color: rgb(169, 211, 250);
+    color: white;
+    border: 0px;
+    padding: 3px 5px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    #IncompleteTask{
+    
+        grid-column: 1/-1;
+        margin-bottom: 10px;
+    }
+    #CompleteTask{
+        grid-column: 1/-1;
+    }
+  }

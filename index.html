@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+
+    <title>My Dairy</title>
+</head>
+<body>
+    <section class='container'>
+        <div id="top">
+            <div class="top">
+                <img src="images/image.png" alt="To-Do APP">
+                <h1>MY To-Do App</h1>
+            </div>
+            
+            <form class="taskadd box">
+                <label for="data">Create New Task</label>
+                <input type="text" id="data"/>
+                <input type="submit" id="addTask" value ="Add Task">     
+            </form> 
+        </div>
+    
+        <div id="IncompleteTask" class="taskadd">
+            <h4>INCOMPLETE TASK</h4>
+            <ul id="item" class="incompleteTask1">
+                <li class="item"> <input type="checkbox"> <label>Task Name</label> </li>
+                <li class="item"> <input type="checkbox"> <label>Task Name</label>  </li>
+                <li class="item"> <input type="checkbox"> <label>Task Name</label>  </li>
+              </ul>
+        </div>
+
+        <div id="CompleteTask" class="taskadd">
+            <h4>COMPLETE TASK</h4>
+            <ul id="item1" class="completeTask1">
+                <li class="item">  <label>Task Name</label> <button class="delete">Delete</button> </li>
+                <li class="item">  <label>Task Name</label> <button class="delete">Delete</button> </li>
+                <li class="item">  <label>Task Name</label> <button class="delete">Delete</button> </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
